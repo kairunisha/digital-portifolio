@@ -1,193 +1,180 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #84a6e9;
-        }
-
-        header {
-            background-color: #941919;
-            color: #fff;
-            text-align: center;
-            padding: 2rem 0;
-            position: relative; /* Add this */
-        }
-
-        .header-content h1 {
-            font-size: 2.5rem;
-        }
-
-        /* Add styles for the round profile picture */
-        .profile-picture {
-            width: 100px; /* Adjust the size as needed */
-            height: 100px;
-            border-radius: 75%; /* Create a circular shape */
-            object-fit: cover; /* To ensure the image fills the circular area */
-            position: absolute; /* Add this */
-            top: 75px; /* Adjust top position as needed */
-            left: 75px; /* Adjust left position as needed */
-        }
-
-        nav {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .section-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 1rem;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: justify;
-        }
-
-        .download-button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 20px;
-            display: inline-block;
-            margin-top: 10px;
-            align-self: center;
-        }
-
-        .download-button:hover {
-            background-color: #555;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #333;
-            color: #fff;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="header-content">
-            <!-- Add your profile picture here -->
-            <img src="./my_photo.png" alt="Your Profile Picture" class="profile-picture">
-            <h1>Kairu Nisha</h1>
-            <p>Computer Application Student</p>
+
+   <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Internship</a>
+    <a href="#contact">Contact</a>
+  </nav>
+   <section id="home" class="hero">
+    <div>
+        <h1>Hello, I'm <span>Kairunnisha</span></h1>
+
+        <h2>BCA Graduate | Aspiring IT Professional</h2>
+
+        <p>
+            I am a BCA Graduate Interested In Web Development,
+            Technology, and Building Simple and Useful Websites.
+        </p>
+
+        <a href="#contact" class="button">Contact Me</a>
+        <a href="resume.pdf" class="button" download>Download Resume</a>
+        <button onclick="showMessage()">Say Hello</button>
+    </div>
+  </section>
+   <section id="about">
+    <h2>About Me</h2>
+
+    <div class="about-box">
+
+        <div class="about-item">
+            <div class="about-icon">🎓</div>
+            <p>
+                I am a BCA graduate with an interest in the IT field
+                and web development.
+            </p>
         </div>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-           
-        </ul>
-    </nav>
-
-    <section id="about">
-        <div class="section-content">
-            <h2>About Me</h2>
-            <p>I am a <b>Bachelor of Computer Applications </b> student with a strong interest in computer
-            programming and a keen enthusiasm for emerging technologies. I am highly motivated to learn, adapt, and grow in the ever-evolving tech landscape. With a solid foundation in programming and a commitment to continuous learning, I aim to contribute meaningfully to innovative and forward-thinking projects.</p>
+        <div class="about-item">
+            <div class="about-icon">💻</div>
+            <p>
+                I have basic knowledge of HTML, CSS, JavaScript,
+                MERN stack development, Excel and data entry.
+            </p>
         </div>
-    </section>
 
-    <section id="education">
-        <div class="section-content">
-            <h2>Education</h2>
-            <p>Bachelor of Computer Applications</p>
-            <p>Bharathidasan University</p>
-            
-            
+        <div class="about-item">
+            <div class="about-icon">🚀</div>
+            <p>
+                I am looking for an entry-level IT opportunity where
+                I can apply my skills and continue learning.
+            </p>
         </div>
-    </section>
 
-    <section id="skills">
-        <div class="section-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>C</li>
-                <li>C++/li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>UX & UI</li>
-                <li>ML & AI</li>
-                <li>Tally</li>
-                <li>DBMS</li>
-            </ul>
+    </div>
+</section>
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="education-box">
+        <h3>Bachelor Of Computer Applications (BCA)</h3>
+        <p><strong>Year:</strong> 2026</p>
+        <p>Aiman College of Arts & Science for Women, Trichy</p>
+    </div>
+</section>
+  <section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <p>Basic Web Page Development.</p>
         </div>
-    </section>
 
-    <section id="projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">UI/UX Mobile Application</a></li>
-                <!-- Add more project links here -->
-            </ul>
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <p>Web Page Styling And Layouts.</p>
         </div>
-    </section>
 
-    <section id="resume">
-    
-        <div class="section-content">
-            <center>
-            <h2>Resume</h2>
-            <a href="./my_resume.pdf" target="_blank" class="download-button">Download CV</a>
-        </center>
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Basic Website Interactivity.</p>
         </div>
-        
-    </section>
 
-    <footer>
-        <p>&copy; 2025 Kairu Nisha</p>
-    </footer>
+        <div class="skill-card">
+            <h3>Excel</h3>
+            <p>Basic Spreadsheet And Data Handling.</p>
+        </div>
 
-    <script>
-        // Smooth scrolling to section when clicking on navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
+        <div class="skill-card">
+            <h3>Data Entry</h3>
+            <p>Basic Data Entry And Organization.</p>
+        </div>
 
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
+        <div class="skill-card">
+            <h3>MERN Stack</h3>
+            <p>Basic Knowledge From Internship Experience.</p>
+        </div>
 
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
+    </div>
+</section>
+   <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+                Developed a Responsive Personal Portfolio Website
+                To Showcase My Education, Technical Skills And
+                Project Experience.
+            </p>
+
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+        </div>
+
+    </div>
+</section>
+  <section id="Internship">
+    <h2>Internship Experience</h2>
+
+    <div class="internship-box">
+        <h3>MERN Stack Development Intern</h3>
+
+        <p><strong>Duration:</strong> 1 Month</p>
+
+        <p>
+            Gained Basic Knowledge Of MERN Stack Development And
+            Practical Exposure To Web Development During The Internship.
+        </p>
+    </div>
+</section>
+    <section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-box">
+
+        <p>
+            I Am Currently Looking For Entry-Level Opportunities
+            In The IT Field.
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            asinnisha007@gmail.com
+        </p>
+
+        <p>
+            <strong>Location:</strong>
+            Bangalore, India
+
+        </p>
+        <div class="social-links">
+    <a href="YOUR-LINKEDIN-LINK" target="_blank">LinkedIn</a>
+
+    <a href="YOUR-GITHUB-LINK" target="_blank">GitHub</a>
+</div>
+
+    </div>
+</section>
+ <footer>
+    <p>© 2026 Kairunnisha. All Rights Reserved.</p>
+ </footer>
+<script src="script.js"></script>
+
+
+</body.>
 </html>
